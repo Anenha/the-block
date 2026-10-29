@@ -12,7 +12,7 @@
 
 ### Prerequisites
 * **Android Studio**: Android Studio Ladybug / Meerkat (or newer)
-* **JDK**: Version 21 or 25
+* **JDK**: Version 25
 * **Android SDK**: Target / Compile SDK **37**, Min SDK **28** (Android 9.0+)
 * **Device**: Android Emulator (API 28+) or physical Android device with USB Debugging enabled
 
