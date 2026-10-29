@@ -1,3 +1,88 @@
 <resources>
     <string name="app_name">Block</string>
+
+    <!-- Brand Header -->
+    <string name="brand_name">THE BLOCK</string>
+    <string name="brand_tagline">Kinetic Apex</string>
+    <string name="brand_subtitle">High-performance vehicle auction platform telemetry &amp; real-time bidding feed.</string>
+
+    <!-- Badges -->
+    <string name="badge_grade">GRADE %1$s</string>
+    <string name="badge_lot_number">LOT # %1$s</string>
+    <string name="badge_lots_active">%1$d LOTS ACTIVE</string>
+
+    <!-- Units & Currency -->
+    <string name="unit_km">km</string>
+    <string name="unit_mi">mi</string>
+    <string name="currency_cad">CAD</string>
+    <string name="currency_usd">USD</string>
+
+    <!-- Vehicle Card & General Labels -->
+    <string name="label_odometer">ODOMETER</string>
+    <string name="label_location">LOCATION</string>
+    <string name="label_bid">BID</string>
+    <string name="btn_specs">Specs</string>
+    <string name="btn_bid_now">Bid Now</string>
+    <string name="auction_photo_pending">AUCTION PHOTO PENDING</string>
+    <string name="reserve_amount">Reserve: %1$s</string>
+    <string name="reserve_met">Reserve Met</string>
+    <string name="reserve_met_caps">RESERVE MET</string>
+    <string name="reserve_not_met_caps">RESERVE NOT MET</string>
+
+    <!-- Search & Home Feed -->
+    <string name="search_placeholder">Porsche Taycan Turbo GT</string>
+    <string name="title_no_vehicles_found">NO VEHICLES FOUND</string>
+    <string name="msg_no_vehicles_found">No vehicles match \"%1$s\". Try searching by make, model, trim, or VIN.</string>
+    <string name="btn_clear_search">Clear Search</string>
+    <string name="loading_syncing_telemetry">Syncing vehicle auction telemetry…</string>
+    <string name="title_telemetry_error">TELEMETRY ERROR</string>
+    <string name="btn_retry_connection">Retry Connection</string>
+    <string name="title_no_lots_available">NO LOTS AVAILABLE</string>
+    <string name="msg_no_lots_available">There are currently no vehicles listed in the auction feed.</string>
+    <string name="btn_refresh_feed">Refresh Feed</string>
+
+    <!-- Vehicle Detail Screen -->
+    <string name="title_vehicle_details">Vehicle Details</string>
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_vehicle_photo">%1$s - Photo %2$d</string>
+    <string name="label_vin">VIN:</string>
+    <string name="title_auction_details">Auction Details</string>
+    <string name="label_scheduled_start">SCHEDULED START</string>
+    <string name="label_activity">ACTIVITY</string>
+    <string name="label_pre_bids_placed">Pre-Bids Placed</string>
+    <string name="label_current_highest_bid">CURRENT HIGHEST BID</string>
+    <string name="label_starting_bid">STARTING BID</string>
+    <string name="title_telemetry_specs">Telemetry &amp; Specifications</string>
+    <string name="label_engine">ENGINE</string>
+    <string name="label_drivetrain">DRIVETRAIN</string>
+    <string name="label_fuel_type">FUEL TYPE</string>
+    <string name="fuel_octane_rec">Octane 87-93 Rec.</string>
+    <string name="label_exterior">EXTERIOR</string>
+    <string name="label_interior">INTERIOR</string>
+    <string name="label_certified_inspection">CERTIFIED INSPECTION</string>
+    <string name="grade_format">Grade %1$s</string>
+    <string name="title_damage_history">Damage History</string>
+    <string name="none_reported">None Reported</string>
+    <string name="label_selling_dealer">SELLING DEALER</string>
+    <string name="loading_vehicle_telemetry">Loading vehicle telemetry…</string>
+    <string name="title_vehicle_not_found">VEHICLE NOT FOUND</string>
+    <string name="msg_vehicle_not_found">The requested vehicle lot could not be located in the current auction inventory.</string>
+    <string name="btn_return_to_auctions">Return to Auctions</string>
+    <string name="btn_retry_telemetry">Retry Telemetry</string>
+
+    <!-- Bidding Bottom Sheet -->
+    <string name="label_place_bid">PLACE A BID</string>
+    <string name="subtitle_live_auction">Live Vehicle Auction</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_clear_input">Clear input</string>
+    <string name="bids_placed_count">%1$d bids placed</string>
+    <string name="label_quick_bid_increments">QUICK BID INCREMENTS</string>
+    <string name="label_your_bid_amount">YOUR BID AMOUNT</string>
+    <string name="hint_new_leading_bid">Your bid would become the new leading bid.</string>
+    <string name="btn_confirm_bid_amount">Confirm Bid: %1$s</string>
+    <string name="btn_place_bid">Place Bid</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="error_enter_bid_amount">Enter a bid amount</string>
+    <string name="error_valid_numeric_amount">Please enter a valid numeric amount</string>
+    <string name="error_bid_too_low">Bid must be higher than current bid of %1$s</string>
 </resources>
