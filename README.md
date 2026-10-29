@@ -8,6 +8,76 @@
 
 ---
 
+## 🚀 How to Run the Project
+
+### Prerequisites
+* **Android Studio**: Android Studio Ladybug / Meerkat (or newer)
+* **JDK**: Version 21 or 25
+* **Android SDK**: Target / Compile SDK **37**, Min SDK **28** (Android 9.0+)
+* **Device**: Android Emulator (API 28+) or physical Android device with USB Debugging enabled
+
+> **Note**: The application reads `data/vehicles.json` directly via Gradle asset linking and runs fully self-contained offline without requiring any backend servers or external API keys.
+
+---
+
+### Option A: Via Android Studio (Recommended)
+1. **Clone the repository**:
+   ```bash
+   git clone <repo-url>
+   cd the-block
+   ```
+2. **Open in Android Studio**:
+   - Open Android Studio and select **Open...**
+   - Select the `the-block` root directory.
+   - Allow Gradle sync to complete automatically.
+3. **Run the App**:
+   - Select `app` in the run configuration dropdown.
+   - Choose your connected device or emulator.
+   - Click the green **Run (▶)** button or press `Shift + F10` (`Ctrl + R` on macOS).
+
+---
+
+### Option B: Via Terminal / Command Line
+1. **Build the Debug APK**:
+   ```bash
+   # Windows PowerShell
+   .\gradlew assembleDebug
+
+   # macOS / Linux
+   ./gradlew assembleDebug
+   ```
+2. **Install on connected device / running emulator**:
+   ```bash
+   .\gradlew installDebug
+   ```
+3. **Launch the application**:
+   ```bash
+   adb shell am start -n com.anenha.block/.MainActivity
+   ```
+
+---
+
+### 🧪 Running Unit Tests
+To run the full unit test suite (covering domain use cases, in-memory repository caching, JSON decoding, ViewModels, and UI atoms):
+
+```bash
+# Windows PowerShell
+.\gradlew testDebugUnitTest
+
+# macOS / Linux
+./gradlew testDebugUnitTest
+```
+
+---
+
+### 📚 Architecture, Design & Documentation
+* **[DOCUMENTATION.md](DOCUMENTATION.md)**: In-depth technical architecture, the thread-safe "Read-Once & Cache" strategy, reactive StateFlow live bidding flow, Gradle asset linking, and layer directory blueprints.
+* **[AGENTS.md](AGENTS.md)**: Guidelines for AI agents and developers, architectural boundaries, package blueprints, coding conventions, and testing strategies.
+* **[DESIGN_DARK.md](DESIGN_DARK.md)** & **[DESIGN_LIGHT.md](DESIGN_LIGHT.md)**: Design system specifications for the *Kinetic Apex* theme, including dark/light color tokens, typography scales, and component visual hierarchy.
+* **UI Design & Prototyping**: Crafted with [Google Stitch](https://stitch.google.com/projects/2736467349722659439).
+
+---
+
 OPENLANE powers one of the world's largest digital marketplaces for used vehicles. Every day, thousands of vehicles move through our platform - inspected, listed, auctioned, and sold. Your job is to interpret what we do and bring a working prototype to life.
 
 We're hiring for a team that builds fast, thinks independently, and takes ownership. This challenge is part of that process.
